@@ -4,6 +4,9 @@
   width: 50%;
   /* text-align: center; */
   /* background-color: red; */
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 30px;
+  text-align: justify;
 }
 
 h2.headings,
