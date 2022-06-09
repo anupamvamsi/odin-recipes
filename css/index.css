@@ -78,3 +78,16 @@ a:hover.logo {
   border-radius: 10%;
   image-rendering: crisp-edges;
 }
+
+.socials {
+  width: 3%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+.socials:hover {
+  opacity: 0.7;
+}

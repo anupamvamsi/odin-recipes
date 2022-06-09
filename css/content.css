@@ -6,12 +6,13 @@
   /* background-color: red; */
 }
 
-h2.headings, h1.headings {
+h2.headings,
+h1.headings {
   font-family: 'Courier New', Courier, monospace;
-  display: block;
+  /* display: block;
   width: 50%;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; */
   text-align: center;
 }
 
@@ -26,9 +27,15 @@ h2.headings {
   margin-right: auto;
 }
 
-.list-content li {
-  margin-left: 25%;
+.ulist-content li {
+  /* margin-left: 25%; */
   margin-bottom: 5px;
   list-style-type: square;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.olist-content li {
+  /* margin-left: 25%; */
+  margin-bottom: 15px;
   font-family: Arial, Helvetica, sans-serif;
 }
