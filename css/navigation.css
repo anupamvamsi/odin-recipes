@@ -13,9 +13,13 @@
 }
 
 .navbar {
-  margin: auto;
+  /* margin: auto;
   width: 50%;
-  position: sticky;
+  position: sticky; */
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
 
   padding: 30px;
 }
@@ -35,10 +39,9 @@
 }
 
 .navimg {
-  padding: 20px;
   text-decoration: none;
-  margin-right: 5px;
   width: 20%;
+  padding: 2.4% 16%;
 }
 
 .navbar a:hover,

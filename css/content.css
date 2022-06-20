@@ -6,35 +6,51 @@
 }
 
 .recipe {
-  margin: auto;
-  width: 50%;
-  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 80px 0px;
+  width: 65rem;
   text-align: justify;
+  line-height: 2rem;
 }
 
 /* HEADINGS AND IMAGES */
 h2.headings,
 h1.headings {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+
   font-family: 'Courier New', Courier, monospace;
+  align-self: center;
+  width: 30rem;
   text-align: center;
 }
 
 h2.headings {
+  align-self: flex-start;
+  justify-content: flex-start;
   text-align: left;
 }
 
 .body-image {
-  display: block;
-  width: 30%;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  align-self: center;
+
   border-radius: 10%;
+  width: 30%;
 }
 
 /* LIST STYLES */
 .ulist-content li {
   margin-bottom: 5px;
   list-style-type: square;
+}
+
+.olist-content ul {
+  align-self: flex-start;
+  padding: 0;
+  margin: 0;
 }
 
 .olist-content li {
