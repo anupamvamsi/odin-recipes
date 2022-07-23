@@ -1,4 +1,4 @@
-# odin-recipes
+# [odin-recipes](https://anupamvamsi.github.io/odin-recipes/)
 ## [Project 1 (TheOdinProject)](https://www.theodinproject.com/lessons/foundations-recipes)
 
 The project is aimed to gain an understanding of the basic elements in HTML.
