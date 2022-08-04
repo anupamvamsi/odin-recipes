@@ -21,7 +21,7 @@ h1.headings {
   flex: 1;
   justify-content: center;
 
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   align-self: center;
   width: 30rem;
   text-align: center;
@@ -55,4 +55,33 @@ h2.headings {
 
 .olist-content li {
   margin-bottom: 15px;
+}
+
+@media screen and (max-width: 900px) {
+  .recipe {
+    padding: 0px 3em 0px;
+    max-width: 28rem;
+    text-align: justify;
+    line-height: 1.5rem;
+  }
+
+  /* HEADINGS AND IMAGES */
+  h2.headings,
+  h1.headings {
+    width: 26rem;
+    font-size: 1.7rem;
+  }
+
+  h2.headings {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  .body-image {
+    display: flex;
+    align-self: center;
+
+    border-radius: 10%;
+    width: 15rem;
+  }
 }

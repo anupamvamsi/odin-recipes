@@ -1,92 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odin Recipes</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/content.css" />
+    <style>
+      @media screen and (max-width: 900px) {
+        /* html {
+          font-size: 16px;
+        } */
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Odin Recipes</title>
-  <link rel="stylesheet" href="./css/index.css">
-  <link rel="stylesheet" href="./css/content.css">
-  <style>
-    @media screen and (max-width: 600px) {
-      .odin-logo {
-        width: 65%;
+        /* body {
+          display: flex;
+        } */
+
+        .odin-logo {
+          margin-top: 1.5em;
+          width: 20rem;
+        }
+
+        .first_line {
+          margin-top: -2.7em;
+          font-size: 2.5rem;
+        }
+
+        .second_line {
+          margin-top: -0.3em;
+          font-size: 1.4rem;
+        }
+
+        .images {
+          width: 20rem;
+        }
+
+        .image {
+          width: 8.5rem;
+          padding: 7px 0 0;
+        }
+
+        .image img {
+          width: 8rem;
+        }
+
+        .image .image3 {
+          width: 11rem;
+        }
+
+        .recipe {
+          max-width: 100vw;
+        }
       }
+    </style>
+  </head>
 
-      .first_line {
-        margin-top: -105%;
-        font-size: 28px;
-      }
-
-      .second_line {
-        margin-top: -5%;
-        font-size: 15px;
-      }
-
-      .images {
-        width: 14rem;
-      }
-
-      .image {
-        width: 7rem;
-        padding: 7px 0 0;
-      }
-
-      .image img {
-        width: 6.5rem;
-      }
-
-      .image .image3 {
-        width: 9rem;
-      }
-    }
-  </style>
-</head>
-
-<body>
-
-  <div class="center">
-    <a class="odin-logo" href="https://www.theodinproject.com">
-      <img class="odin-logo" src="https://www.theodinproject.com/mstile-310x310.png"
-        alt="The Odin Project logo, links to The Odin Project website">
-    </a>
-    <a href="./index.html">
-      <h1 class="first_line">Odin</h1>
-      <h1 class="second_line">Recipes</h1>
-    </a>
-  </div>
-
-  <div class="images">
-    <div class="image">
-      <a href="./recipes/bread-and-eggs.html">
+  <body>
+    <div class="center">
+      <a class="odin-logo" href="https://www.theodinproject.com">
         <img
-          src="https://images.unsplash.com/photo-1525351484163-7529414344d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
-          alt="Link to Eggs and Bread">
+          class="odin-logo"
+          src="https://www.theodinproject.com/mstile-310x310.png"
+          alt="The Odin Project logo, links to The Odin Project website"
+        />
+      </a>
+      <a href="./index.html">
+        <h1 class="first_line">Odin</h1>
+        <h1 class="second_line">Recipes</h1>
       </a>
     </div>
-    <div class="image">
-      <a href="./recipes/maggi-and-eggs.html">
-        <img
-          src="https://images.unsplash.com/photo-1603033172872-c2525115c7b9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
-          alt="Link to Maggi and Eggs">
-      </a>
+
+    <div class="images">
+      <div class="image">
+        <a href="./recipes/bread-and-eggs.html">
+          <img
+            src="https://images.unsplash.com/photo-1525351484163-7529414344d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+            alt="Link to Eggs and Bread"
+          />
+        </a>
+      </div>
+      <div class="image">
+        <a href="./recipes/maggi-and-eggs.html">
+          <img
+            src="https://images.unsplash.com/photo-1603033172872-c2525115c7b9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+            alt="Link to Maggi and Eggs"
+          />
+        </a>
+      </div>
+      <div class="image">
+        <a href="./recipes/boiled-eggs.html">
+          <img
+            class="image3"
+            src="https://images.unsplash.com/photo-1551014029-03820d0b88f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80"
+            alt="Link to Boiled Eggs"
+          />
+        </a>
+      </div>
     </div>
-    <div class="image">
-      <a href="./recipes/boiled-eggs.html">
-        <img class="image3"
-          src="https://images.unsplash.com/photo-1551014029-03820d0b88f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80"
-          alt="Link to Boiled Eggs">
-      </a>
+
+    <div class="recipe" style="text-align: center; margin-top: 50px">
+      <p>Credits to Unsplash for the images.</p>
     </div>
-  </div>
 
-  <div class="recipe" style="text-align: center; margin-top: 50px;">
-    <p>Credits to Unsplash for the images.</p>
-  </div>
-
-  <a href="https://github.com/anupamvamsi">
-    <img class="socials" src="./img/GitHub-Mark.png" alt="GitHub Profile Link anupamvamsi">
-  </a>
-</body>
-
+    <a href="https://github.com/anupamvamsi">
+      <img
+        class="socials"
+        src="./img/GitHub-Mark.png"
+        alt="GitHub Profile Link anupamvamsi"
+      />
+    </a>
+  </body>
 </html>

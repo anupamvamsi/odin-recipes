@@ -113,3 +113,9 @@
 .back-top a:hover {
   opacity: 0.9;
 }
+
+@media screen and (max-width: 900px) {
+  .back-top {
+    display: none;
+  }
+}
