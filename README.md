@@ -1,9 +1,9 @@
-# odin-recipes
+# [odin-recipes](https://anupamvamsi.github.io/odin-recipes/)
 ## [Project 1 (TheOdinProject)](https://www.theodinproject.com/lessons/foundations-recipes)
 
 The project is aimed to gain an understanding of the basic elements in HTML.
 
-My implementation of the project covers the requirement of the understanding and usage of the HTML elements along with using CSS, though it is not currently specified as a requirement for completing the project.
+My implementation of the project covers the requirement of the understanding and usage of the HTML elements along with using CSS, though it is not currently specified as a requirement for completing the project. Update: Later on, the course suggests styling the page as part of learning to implement CSS, during which I (kinda) was able to get the site to work on mobile devices as well.
 
 The end result of the project is hosted [here](https://anupamvamsi.github.io/odin-recipes/), using [github-pages](https://docs.github.com/en/pages).
 
