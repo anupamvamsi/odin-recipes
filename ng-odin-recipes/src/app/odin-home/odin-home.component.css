@@ -1,0 +1,59 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+
+  background-color: whitesmoke;
+}
+
+a {
+  text-decoration: none;
+}
+
+.odin-logo-cntr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 2% 0% 0%;
+  text-align: center;
+}
+
+.odin-logo {
+  width: 25em;
+}
+
+.odin-logo-cntr a {
+  font-family: "Courier New", Courier, monospace;
+  color: gray;
+}
+
+.odin-logo-cntr a:hover {
+  color: rgb(163, 163, 163);
+}
+
+.first_line {
+  margin-top: -115%;
+  margin-bottom: 0;
+
+  font-size: 50px;
+}
+
+.second_line {
+  margin-top: -115%;
+
+  margin-top: 0;
+  font-size: 27px;
+}
