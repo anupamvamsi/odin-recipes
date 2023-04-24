@@ -1,8 +1,8 @@
 <div class="images">
   <app-home-recipe-img
-    *ngFor="let src of srcImages; let i = index"
+    *ngFor="let src of srcImages; let alt; of: altTexts; let i = index"
     [srcImage]="src"
+    [altText]="alt"
   >
-    <!-- {{ srcImages[0] }} -->
   </app-home-recipe-img>
 </div>
