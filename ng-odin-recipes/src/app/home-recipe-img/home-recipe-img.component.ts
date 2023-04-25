@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { ImageLink } from './ImageLink';
 
 @Component({
   selector: 'app-home-recipe-img',
@@ -7,6 +8,5 @@ import { Component, Input } from '@angular/core';
 })
 export class HomeRecipeImgComponent {
   // it errors out - add     "strictPropertyInitialization": false, after "strict": true in tsconfig.json's compilerOptions
-  @Input() srcImage: string;
-  @Input() altText: string;
+  @Input() imageLink: ImageLink;
 }
