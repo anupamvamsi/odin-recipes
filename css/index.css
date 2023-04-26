@@ -67,7 +67,7 @@ a {
 }
 
 /* ODIN LOGO */
-.center {
+.odin-logo-cntr {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -80,12 +80,12 @@ a {
   width: 85%;
 }
 
-.center a {
+.odin-logo-cntr a {
   color: gray;
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-.center a:hover {
+.odin-logo-cntr a:hover {
   color: rgb(163, 163, 163);
 }
 
