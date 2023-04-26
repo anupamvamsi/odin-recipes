@@ -1,42 +1,5 @@
 <a id="#top"></a>
-<nav class="navbar">
-  <a onclick="history.back()">
-    <div class="navitem">
-      <img src="../../assets/images/back.png" alt="Back button" width="14" />
-    </div>
-  </a>
-
-  <a class="navimg" href="https://www.theodinproject.com">
-    <img
-      src="https://www.theodinproject.com/mstile-310x310.png"
-      alt="The Odin Project's logo, links to The Odin Project website"
-    />
-  </a>
-
-  <div class="navitem">
-    <a href="../index.html">home</a>
-  </div>
-
-  <div class="navitem dropdown">
-    <a>More</a>
-    <div class="dropdown-content">
-      <a href="../recipes/maggi-and-eggs.html">
-        <img
-          class="dropdown-image"
-          src="https://images.unsplash.com/photo-1603033172872-c2525115c7b9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
-          alt="Link to Maggi and Eggs"
-        />
-      </a>
-      <a href="../recipes/boiled-eggs.html">
-        <img
-          class="dropdown-image"
-          src="https://images.unsplash.com/photo-1551014029-03820d0b88f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80"
-          alt="Link to Boiled Eggs"
-        />
-      </a>
-    </div>
-  </div>
-</nav>
+<app-navbar></app-navbar>
 
 <div class="recipe">
   <h1 class="headings">{{ recipe.title }}</h1>
@@ -59,6 +22,7 @@
     </li>
   </ol>
 
+  <app-backtop></app-backtop>
   <app-credits></app-credits>
   <app-social-footer></app-social-footer>
 </div>

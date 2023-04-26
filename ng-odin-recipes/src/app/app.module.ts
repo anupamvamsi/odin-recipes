@@ -10,6 +10,9 @@ import { SocialFooterComponent } from './social-footer/social-footer.component';
 import { CreditsComponent } from './credits/credits.component';
 import { HomeComponent } from './home/home.component';
 import { RecipeComponent } from './recipe/recipe.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { NavddComponent } from './navdd/navdd.component';
+import { BacktopComponent } from './backtop/backtop.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +24,9 @@ import { RecipeComponent } from './recipe/recipe.component';
     CreditsComponent,
     HomeComponent,
     RecipeComponent,
+    NavbarComponent,
+    NavddComponent,
+    BacktopComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

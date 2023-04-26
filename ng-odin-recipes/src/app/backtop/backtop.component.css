@@ -1,0 +1,43 @@
+/* BACK TO TOP BUTTON */
+.back-top,
+.back-top a {
+  color: white;
+}
+
+.back-top {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background-color: gray;
+  padding: 1em;
+  border-radius: 10px;
+}
+
+.back-top a {
+  text-decoration: none;
+}
+
+.back-top a:hover {
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 900px) {
+  .back-top {
+    display: none;
+  }
+}
+
+/* https://stackoverflow.com/questions/68973719/how-to-make-scroll-to-top-button-appear-after-scrolling-in-angular */
+.to-top {
+  bottom: 0;
+  cursor: pointer;
+  margin: 0 8px 12px 0;
+  position: fixed;
+  right: 0;
+  opacity: 0;
+}
+
+.show-scrollTop {
+  opacity: 1 !important;
+  transition: all 0.2s ease-in-out;
+}

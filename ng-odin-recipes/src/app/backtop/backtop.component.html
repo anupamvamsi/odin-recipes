@@ -1,0 +1,8 @@
+<!-- https://stackoverflow.com/questions/68973719/how-to-make-scroll-to-top-button-appear-after-scrolling-in-angular -->
+<div
+  class="to-top back-top"
+  (click)="scrollToTop()"
+  [ngClass]="{ 'show-scrollTop': windowScrolled }"
+>
+  <a class="navitem">Top</a>
+</div>
