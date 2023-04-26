@@ -3,13 +3,13 @@
     <img
       src="{{ imageLink.srcImage }}"
       alt="{{ imageLink.altText }}"
-      *ngIf="imageLink.altText !== 'Link to Boiled Eggs Recipe'"
+      *ngIf="imageLink.altText !== 'Image of Boiled Eggs'"
     />
     <img
       class="image3"
       src="{{ imageLink.srcImage }}"
       alt="{{ imageLink.altText }}"
-      *ngIf="imageLink.altText === 'Link to Boiled Eggs Recipe'"
+      *ngIf="imageLink.altText === 'Image of Boiled Eggs'"
     />
   </a>
 </div>

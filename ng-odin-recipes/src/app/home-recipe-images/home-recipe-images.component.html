@@ -1,8 +1,8 @@
 <div class="images">
   <!-- item[0] is the src, item[1] is the alt -->
   <app-home-recipe-img
-    *ngFor="let item of imageLinks; let i = index"
-    [imageLink]="item"
+    *ngFor="let item of recipes; let i = index"
+    [imageLink]="item.imageLink"
   >
   </app-home-recipe-img>
 </div>

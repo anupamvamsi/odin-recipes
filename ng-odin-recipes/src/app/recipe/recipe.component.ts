@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { IRecipe, BreadAndEggs } from './recipe-interface';
+import {
+  IRecipe,
+  BreadAndEggs,
+  MaggiAndEggs,
+  BoiledEggs,
+} from './recipe-interface';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -8,35 +13,21 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./recipe.component.css'],
 })
 export class RecipeComponent implements OnInit {
-  recipe: BreadAndEggs = new BreadAndEggs();
+  recipe: IRecipe;
 
-  constructor() {
-    this.recipe = new BreadAndEggs();
-  }
+  constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {
-    let recipeInside: IRecipe;
-    this.recipe = new BreadAndEggs();
-
-    console.log('LALLALALALALAL');
-    // if (this.route.params['recipeName'] === 'bread-and-eggs') {
-    // this.recipe = new BreadAndEggs();
-    // }
-
-    /*this.recipeOutside = */
-    // this.route.params.subscribe({
-    //   next(params: any) {
-    //     console.log('OUTSIDE', params['recipeName']);
-
-    //     if (params['recipeName'] === 'bread-and-eggs') {
-    //       // recipeInside = new BreadAndEggs();
-    //       console.log('INSIDE', params['recipeName']);
-    //       // return recipeInside;
-    //     }
-    //     // return null;
-    //   },
-    // });
-
-    // this.recipeOutside = recipeInside;
+    this.route.params.subscribe((params) => {
+      if (params['recipeName'] === 'bread-and-eggs') {
+        this.recipe = new BreadAndEggs();
+      }
+      if (params['recipeName'] === 'maggi-and-eggs') {
+        this.recipe = new MaggiAndEggs();
+      }
+      if (params['recipeName'] === 'boiled-eggs') {
+        this.recipe = BoiledEggs;
+      }
+    });
   }
 }
