@@ -13,11 +13,9 @@ import {
   styleUrls: ['./home-recipe-images.component.scss'],
 })
 export class HomeRecipeImagesComponent {
-  imageLinks: ImageLink[];
   recipes: IRecipe[];
 
   constructor() {
-    this.imageLinks = [];
     this.recipes = [];
   }
 
