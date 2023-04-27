@@ -1,10 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {
-  IRecipe,
-  BreadAndEggs,
-  MaggiAndEggs,
-  BoiledEggs,
-} from '../recipe/recipe-interface';
+import { IRecipe } from '../recipe/recipe-interface';
+import { PseudoBackendService } from '../services/pseudo-backend.service';
+/* idk how I typed it but I did - ㄣ*/
 
 @Component({
   selector: 'app-navbar',
@@ -14,11 +11,13 @@ import {
 export class NavbarComponent {
   recipes: Array<IRecipe>;
 
-  constructor() {
+  constructor(private backendService: PseudoBackendService) {
     this.recipes = [];
   }
 
   ngOnInit() {
-    this.recipes.push(new BreadAndEggs(), new MaggiAndEggs(), BoiledEggs);
+    this.backendService
+      .getRecipes()
+      .subscribe((recipes: IRecipe[]) => (this.recipes = recipes));
   }
 }

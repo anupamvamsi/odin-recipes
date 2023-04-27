@@ -12,7 +12,10 @@ export class PseudoBackendService {
   constructor(private httpClient: HttpClient) {}
 
   getRecipe(id: number): Observable<IRecipe> {
-    console.log(this.httpClient.get<IRecipe>(`${this.apiUrl}/${id}`));
     return this.httpClient.get<IRecipe>(`${this.apiUrl}/${id}`);
+  }
+
+  getRecipes(): Observable<IRecipe[]> {
+    return this.httpClient.get<IRecipe[]>(this.apiUrl);
   }
 }

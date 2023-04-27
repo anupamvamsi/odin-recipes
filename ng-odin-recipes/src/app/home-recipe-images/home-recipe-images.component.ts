@@ -1,11 +1,7 @@
 import { Component } from '@angular/core';
 import { ImageLink } from '../home-recipe-img/ImageLink';
-import {
-  IRecipe,
-  BreadAndEggs,
-  MaggiAndEggs,
-  BoiledEggs,
-} from '../recipe/recipe-interface';
+import { IRecipe } from '../recipe/recipe-interface';
+import { PseudoBackendService } from '../services/pseudo-backend.service';
 
 @Component({
   selector: 'app-recipe-images',
@@ -15,11 +11,13 @@ import {
 export class HomeRecipeImagesComponent {
   recipes: IRecipe[];
 
-  constructor() {
+  constructor(private backendService: PseudoBackendService) {
     this.recipes = [];
   }
 
   ngOnInit() {
-    this.recipes.push(new BreadAndEggs(), new MaggiAndEggs(), BoiledEggs);
+    this.backendService
+      .getRecipes()
+      .subscribe((recipes: IRecipe[]) => (this.recipes = recipes));
   }
 }

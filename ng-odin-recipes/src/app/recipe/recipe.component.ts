@@ -1,10 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {
-  IRecipe,
-  BreadAndEggs,
-  MaggiAndEggs,
-  BoiledEggs,
-} from './recipe-interface';
+import { IRecipe } from './recipe-interface';
 import { ActivatedRoute } from '@angular/router';
 import { PseudoBackendService } from '../services/pseudo-backend.service';
 
