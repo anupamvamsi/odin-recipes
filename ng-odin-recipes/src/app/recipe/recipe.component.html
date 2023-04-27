@@ -1,5 +1,5 @@
 <a id="#top"></a>
-<app-navbar></app-navbar>
+<app-navbar *ngIf="recipe" [id]="recipe.id"></app-navbar>
 
 <div class="recipe" *ngIf="recipe">
   <h1 class="headings">{{ recipe.title }}</h1>

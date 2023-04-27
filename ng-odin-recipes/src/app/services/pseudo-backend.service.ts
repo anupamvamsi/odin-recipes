@@ -18,4 +18,9 @@ export class PseudoBackendService {
   getRecipes(): Observable<IRecipe[]> {
     return this.httpClient.get<IRecipe[]>(this.apiUrl);
   }
+
+  getRecipesExcept(id: number): Observable<IRecipe[]> {
+    console.log('ID:', id);
+    return this.httpClient.get<IRecipe[]>(`${this.apiUrl}?id_ne=${id}`);
+  }
 }

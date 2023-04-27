@@ -9,7 +9,8 @@ import { PseudoBackendService } from '../services/pseudo-backend.service';
   styleUrls: ['./recipe.component.css'],
 })
 export class RecipeComponent implements OnInit {
-  recipe: IRecipe = {
+  recipe: IRecipe; /* = {
+    id: 1,
     title: 'Error 404',
     description: ['Oops, not meant to be here! Maybe a new recipe?'],
     ingredients: ['Yikes', 'Eeps'],
@@ -24,7 +25,7 @@ export class RecipeComponent implements OnInit {
       altText: 'oh no',
       linkToPage: '/',
     },
-  };
+  };*/
 
   constructor(
     private route: ActivatedRoute,

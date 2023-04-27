@@ -1,7 +1,7 @@
 import { ImageLink } from '../home-recipe-img/ImageLink';
 
 export interface IRecipe {
-  id?: number;
+  id: number;
   title: string;
   description: Array<string>;
   ingredients: Array<string>;
