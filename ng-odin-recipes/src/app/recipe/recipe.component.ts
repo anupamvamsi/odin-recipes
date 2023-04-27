@@ -44,10 +44,14 @@ export class RecipeComponent implements OnInit {
         });
       }
       if (params['recipeName'] === 'maggi-and-eggs') {
-        this.recipe = new MaggiAndEggs();
+        this.backendService.getRecipe(2).subscribe((r: any) => {
+          this.recipe = r;
+        });
       }
       if (params['recipeName'] === 'boiled-eggs') {
-        this.recipe = BoiledEggs;
+        this.backendService.getRecipe(3).subscribe((r: any) => {
+          this.recipe = r;
+        });
       }
     });
   }
