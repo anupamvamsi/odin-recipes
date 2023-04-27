@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { OdinHomeComponent } from './odin-home/odin-home.component';
 import { HomeRecipeImgComponent } from './home-recipe-img/home-recipe-img.component';
@@ -28,7 +29,7 @@ import { BacktopComponent } from './backtop/backtop.component';
     NavddComponent,
     BacktopComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })

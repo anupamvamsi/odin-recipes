@@ -1,9 +1,13 @@
 <a id="#top"></a>
 <app-navbar></app-navbar>
 
-<div class="recipe">
+<div class="recipe" *ngIf="recipe">
   <h1 class="headings">{{ recipe.title }}</h1>
-  <img class="body-image" src="{{ recipe.imageLink.srcImage }}" />
+  <img
+    class="body-image"
+    src="{{ recipe.imageLink.srcImage }}"
+    alt="{{ recipe.imageLink.altText }}"
+  />
 
   <h2 class="headings">Description</h2>
   <p *ngFor="let desc of recipe.description">

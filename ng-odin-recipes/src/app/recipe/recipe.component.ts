@@ -6,6 +6,7 @@ import {
   BoiledEggs,
 } from './recipe-interface';
 import { ActivatedRoute } from '@angular/router';
+import { PseudoBackendService } from '../services/pseudo-backend.service';
 
 @Component({
   selector: 'app-recipe',
@@ -13,14 +14,34 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./recipe.component.css'],
 })
 export class RecipeComponent implements OnInit {
-  recipe: IRecipe;
+  recipe: IRecipe = {
+    title: 'Error 404',
+    description: ['Oops, not meant to be here! Maybe a new recipe?'],
+    ingredients: ['Yikes', 'Eeps'],
+    steps: [
+      "I'm sorry",
+      "I'm sorry",
+      '*steps generated courtesy of AI completion',
+    ],
+    imageLink: {
+      srcImage:
+        'https://images.unsplash.com/photo-1555861496-0666c8981751?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
+      altText: 'oh no',
+      linkToPage: '/',
+    },
+  };
 
-  constructor(private route: ActivatedRoute) {}
+  constructor(
+    private route: ActivatedRoute,
+    private backendService: PseudoBackendService
+  ) {}
 
   ngOnInit() {
     this.route.params.subscribe((params) => {
       if (params['recipeName'] === 'bread-and-eggs') {
-        this.recipe = new BreadAndEggs();
+        this.backendService.getRecipe(1).subscribe((r: any) => {
+          this.recipe = r;
+        });
       }
       if (params['recipeName'] === 'maggi-and-eggs') {
         this.recipe = new MaggiAndEggs();
